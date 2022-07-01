@@ -66,6 +66,31 @@ footer{
 
 }
 
+/* animaciones-transformaciones-transition*/
+img {
+    filter: brightness(100%);
+    transition: all 2s;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+h1 {
+    animation-duration: 4s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Grillas*/
 header{
     grid-area: header;
@@ -109,9 +134,9 @@ article {
 
  .textoPrendas{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
-    color: aliceblue;
+    color: rgb(134, 84, 98);
 }
 
 /*.imgPrendas {

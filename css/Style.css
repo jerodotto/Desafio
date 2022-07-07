@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.logo{
+    display: flex;
+}
+
 .padre-flex{
     justify-content: flex-end;
 }
@@ -14,7 +18,8 @@
     margin-top: 10px;
 }
 
-body {
+
+body{
     background-color: rgb(228, 212, 225);
 }
 
@@ -37,12 +42,12 @@ ul {
     font-size: 0;
 }
 
-/*li {
+li {
     display: flex;
     display: inline-block;
     position: relative;
     font-size: 14px;
-}*/
+}
 
 ul ul {
     position: absolute;
@@ -61,9 +66,6 @@ ul ul li {
 footer{
     display: flex;
     justify-content: end;
-    /*margin-top: 400px;
-    margin-left: 900px;*/
-
 }
 
 /* animaciones-transformaciones-transition*/
@@ -109,6 +111,10 @@ article {
 }
 
 /*Home*/
+#colorLi{
+    flex-direction: none;
+}
+
 #mainHome{
     display: grid;
     grid-template-columns: auto;
@@ -117,16 +123,18 @@ article {
 }
 
 #colorLi a {
-    color: bisque;
+    color: beige;
+    text-decoration: none;
 }
 .backHome {
     background-image: url("../media/posible\ home.jpg");
+    background-size: 100%;
     background-repeat: round;
     background-attachment: fixed;
 }
 
 #footerHome{
-    margin-top: 450px;
+    margin-top: 550px;
     margin-left: 900px;
 }
 
@@ -191,22 +199,22 @@ div section img {
 
 /*Calzados*/
 .imgCalzados {
-    margin-top: 100px;
+    margin-top: 200px;
 
 }
 
-#tablaCalzados {
+/*#tablaCalzados {
     background-color: rgb(40, 40, 110);
     margin-top: 50px;
     margin-left: 200px;
     border: groove;
-}
+}*/
 
 #mainCalzados{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 25% auto 15%;
-    grid-template-areas: "header" "section" "footer";
+    grid-template-rows: 15% auto auto 15%;
+    grid-template-areas: "header" "section" "article" "footer";
 }
 
 #gridCalzados{
@@ -288,6 +296,14 @@ background-color: whitesmoke;
 }
 
 @media screen and (min-width: 360px) {
+    #menuDesktop{
+        display: none;
+    }
+    #menuMobile{
+        display: block;
+    }
+   
+    
     #mainHome{
         display: grid;
         grid-template-columns: auto;
@@ -297,6 +313,7 @@ background-color: whitesmoke;
         
     #backHome{
         background-repeat: no-repeat;
+        background-size: 100%;
         background-position: top;
     }
   
@@ -335,17 +352,17 @@ background-color: whitesmoke;
     #mainCalzados{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 25% auto 15%;
-        grid-template-areas: "header" "section" "footer";
+        grid-template-rows: 15% auto auto 15%;
+        grid-template-areas: "header" "section" "article" "footer";
     }
     
-    #gridCalzados{
+    /*#gridCalzados{
         display: grid;
         grid-template-columns:repeat(4, 1fr) ;
         grid-template-rows: auto;
         column-gap: 5px;
         
-    }
+    }*/
 
     #mainGiftCard{
         display: grid;
@@ -373,7 +390,14 @@ background-color: whitesmoke;
 
 
 @media screen and (min-width: 1200px) {  
-   
+    #menuDesktop{
+        display: block;
+    }
+    #menuMobile{
+        display: none;
+    }
+
+
     #mainPrendas{
         display: grid;
         grid-template-columns: auto;

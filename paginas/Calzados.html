@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBIA UNA VEZ</title>
     <link rel="stylesheet" href="../css/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
 </head>
 <body>
-    <div id="mainCalzados">
+    <div>
     <header class="menu">
-        <nav>
-            <a class="logo" href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
+      <div id="menuDesktop">
+         <nav>
+          <a class="logo" href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
             <ul>
                 <li><a href="../paginas/Prendas.html">Prendas</a>
                     <ul>
@@ -39,46 +42,132 @@
                 <li><a href="../paginas/Contacto.html">Contacto</a></li>
             </ul>
             <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
-       </nav>        
+       </nav> 
+      </div>  
+       
+      <div id="menuMobile">
+        <nav class="navbar bg-light fixed-top">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="../index.html">Habia una Vez</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+             <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             </div>
+             <div class="offcanvas-body">
+               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Prendas.html">Prendas</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Accesorios.html">Accesorios</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Calzados.html">Calzados</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Gifcard.html">Gift Card</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Registrate.html">Registrate</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                 </li>
+               </ul>  
+             </div>
+           </div>
+         </div>
+       </nav>
+     </div>
     </header>
-        
-    <section id="gridCalzados">
-        <div>
-            <img src="../media/CALZADOS.jpg" width="300px" alt="zapatos">
-            <br>
-            <button>Comprar</button>
-        </div>
-        <div>
-            <img src="../media/z1.jpg" width="300px" alt="zapatos">
-            <br>
-            <button>Comprar</button>
-        </div>
-        <div>
-            <img src="../media/z2.jpg" width="300px" alt="zapatos">
-            <br>
-            <button>Comprar</button>
-        </div>
-        <div>
-            <img src="../media/z3.jpg" width="300px" alt="zapatos">
-            <br>
-            <button>Comprar</button>
-        </div>
-    </section>
+  
 
 
-      <table border="1" cellpadding="3" cellspacing="5">
-          <th>Small</th>
-          <th>Medium</th>
-          <th>Large</th>
-          <tr>
-              <td>20-22</td>
-              <td>24-26</td>
-              <td>26-28</td>
-          </tr>
-                   
-      </table>
+    <section class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xl-3">
+            <div class="card" style="width: 18rem;">
+              <img src="../media/CALZADOS.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+         </div>
     
+         <div class="col-sm-6 col-md-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../media/z1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+       </div>
+       
+       <div class="col-sm-6 col-md-3 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../media/z2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+     </div>
+    
+     <div class="col-sm-6 col-md-3 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <img src="../media/z3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+</section>
 
+<br>
+    
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Tabla de Talles
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Talle</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Small</th>
+              <th scope="col">Medium</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>20 - 22</td>
+              <td>24 - 26</td>
+              <td>28 - 30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
     <footer id="footerHome">
         <nav>
             <a href="https://www.facebook.com/Habiaunaveztiendadenenas" target="_blank"> <img src="../media/facebook.png" width="35px" alt="facebook"> </a>
@@ -86,7 +175,11 @@
             <a href="https://api.whatsapp.com/send?phone=" target="_blank"> <img src="../media/Whatsapp.PNG" width="35px" alt="whatsapp"></a>
         </nav>
     </footer>
-</div>
+   
+     </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

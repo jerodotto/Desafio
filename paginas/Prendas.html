@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABIA UNA VEZ</title>
     <link rel="stylesheet" href="../css/Style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      
     <!-- Ícono de pestaña -->
 </head>
 <body>
     <div id="mainPrendas">
         <header class="menu">
+          <div id="menuDesktop">
             <nav>
                 <a href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
                 <ul>
@@ -43,50 +45,124 @@
                 </ul>
                 <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
             </nav>
-    </header>
+          </div>
 
-    <section id="gridPrendas">
-        <div>
-            <img src="../media/sweters.jpg" alt="">
-            <br>
-            <button>Comprar</button>
+          <div id="menuMobile">
+            <nav class="navbar bg-light fixed-top">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="../index.html">Habia una Vez</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                 <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                 </div>
+                 <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Prendas.html">Prendas</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Accesorios.html">Accesorios</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Calzados.html">Calzados</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Gifcard.html">Gift Card</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Registrate.html">Registrate</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                     </li>
+                   </ul>  
+                 </div>
+               </div>
+             </div>
+           </nav>
+         </div>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xl-3">
+            <div class="card" style="width: 18rem;">
+              <img src="../media/bodys.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+         </div>
+    
+         <div class="col-sm-6 col-md-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../media/campera.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+       </div>
+       
+       <div class="col-sm-6 col-md-3 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../media/DE DISEÑO.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
         </div>
-        <div>
-            <img src="../media/home.jpg" alt="Vestidos" >
-            <br>
-            <button>Comprar</button>
+     </div>
+    
+     <div class="col-sm-6 col-md-3 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <img src="../media/remeras.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-        <div>
-            <img src="../media/WhatsApp Image 2022-06-03 at 10.55.48 AM.jpeg" alt="Vestidos" >
-            <br>
-            <button>Comprar</button>
+      </div>
+    </div>
         </div>
-        <div>
-            <img src="../media/bodys.jpg" alt="bodys" >
-            <br>
-            <button>Comprar</button>
+    
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xl-3">
+            <div class="card" style="width: 18rem;">
+              <img src="../media/sweters.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+         </div>
+    
+         <div class="col-sm-6 col-md-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img src="../media/pantalon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+       </div>
+       
+       <div class="col-sm-6 col-md-3 col-xl-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../media/WhatsApp Image 2022-06-03 at 10.55.48 AM.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
         </div>
-        <div>
-            <img src="../media/calzas.jpg" alt="calzas" >
-            <br>
-            <button>Comprar</button>
+     </div>
+    
+     <div class="col-sm-6 col-md-3 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <img src="../media/calzas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-        <div>
-            <img src="../media/campera.jpg" alt="campera" >
-            <br>
-            <button>Comprar</button>
+      </div>
+    </div>
         </div>
-        <div>
-            <img src="../media/pantalon.jpg"  alt="Pantalones" >
-            <br>
-            <button>Comprar</button>
-        </div>
-        <div>
-            <img src="../media/remeras.jpg" alt="remeras" >
-            <br>
-            <button>Comprar</button>
-        </div>
-    </section>
+       </section>
 
     
     <article class="textoPrendas">
@@ -101,6 +177,8 @@
         <a href="https://api.whatsapp.com/send?phone=" target="_blank"> <img src="../media/Whatsapp.PNG" width="35px" alt="whatsapp"></a>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

@@ -15,7 +15,37 @@
     <div id="mainGiftCard">
     <header class="menu">
         <div id="menuDesktop">
-        <nav>
+        
+          <div id="menuDesktop" class="row">
+            <a class="logo" href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
+        <div class="contenedorNav">
+                            
+            <ul class=" nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="Prendas.html">Prendas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Accesorios.html">Accesorios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Calzados.html">Calzados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Gifcard.html">Giftcard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Registrate.html">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              
+            </ul>
+            </div>
+            <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
+        </div>
+        
+        <!--<nav>
             <a class="logo" href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
             <ul>
                 <li><a href="../paginas/Prendas.html">Prendas</a>
@@ -45,7 +75,7 @@
                 <li><a href="../paginas/Contacto.html">Contacto</a></li>
             </ul>
             <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
-       </nav>
+       </nav>-->
     </div>
     
     <div id="menuMobile">
@@ -84,6 +114,7 @@
            </div>
          </div>
        </div>
+       <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
      </nav>
    </div>
     </header>
@@ -96,9 +127,38 @@
             </p>
     </section>
     <br>
-        <h3>Gift Card</h3>
+    <article>
+      <br>
+        <h3 id="posicion">Gift Card</h3>
+        <br>
+        <div class="card mb-3">
+          <img id="imgGift" src="../media/logo original.jpg" width="200px" alt="...">
+          <div class="card-body">
+            <form class="fieldsetGift" action="" method="get" enctype="multipart/form-data">
+              <fieldset class="fieldsetGift">
+                  <label for="nombre">Para:</label>
+                  <input type="text" placeholder="Nombre y Apellido">
+                  <br>
+                  <label for="numero">Importe de Compra</label>
+                  <input type="number" name="number" id="">
+                  <br>
+                  <label for="Email">¿Deseas enviarla por Correo Electrónico?</label>
+                  <br>
+                  <input id="Si" name="correo electronico" type="radio" value="Si">
+                  <label for="Si"> Si </label>
+                  <input id="No" name="correo electronico" type="radio" value="No">
+                  <label for="No"> No</label>
+                  <br>
+                  <input type="email" name="correo electronico" id="" placeholder="juanperez@gmail.com">
+                  <br>
+                  <input type="submit" value="Enviar">
+   
+              </fieldset>
+          </form>
+          </div>
+        </div>
 
-        <div class="card mb-8" style="max-width: 540px;">
+        <!--<div class="card mb-8" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-3">
                 <img src="../media/logo original.jpg" class="img-fluid rounded-start" alt="...">
@@ -129,8 +189,8 @@
                 </div>
               </div>
             </div>
-          </div> 
-       
+          </div>--> 
+        </article>
         <footer id="footerHome">
             <nav>
                 <a href="https://www.facebook.com/Habiaunaveztiendadenenas" target="_blank"> <img src="../media/facebook.png" width="35px" alt="facebook"> </a>

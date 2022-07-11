@@ -1,3 +1,62 @@
+/* modificaciones*/
+.contenedorNav{
+    background-color: rgb(166, 160, 160);
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav li.nav-item a:hover{
+    color: black;
+}
+.nav li:hover {
+    background-color: white;
+    color: black;
+    --bs-text-opacity: 0;
+}
+.nav-item {
+    text-decoration: none;
+   
+}
+.dropdown-item {
+    color:black;
+}
+.dropdown-item:hover {
+    background-color: rgba(220, 220, 220, 0.753) ;
+    color: black;
+}
+
+.card-body{
+    background-color: gray;
+}
+
+.card-body a{
+    background-color: beige;
+    color: black;
+}
+
+.contenedorNav a{
+    color: aliceblue;
+}
+
+.carousel-inner .carousel-item img{
+    object-fit: fil;
+    max-height: 460px;
+    width: 100%;
+}
+
+.card-img{
+    height: 50vh;
+    object-fit: scale-down;
+}
+
+.card .card-img-top {
+    width: auto;
+    height: 50vh;
+}
+
+/* */
 *{
     margin: 0;
     padding: 0;
@@ -18,10 +77,6 @@
     margin-top: 10px;
 }
 
-
-body{
-    background-color: rgb(228, 212, 225);
-}
 
 a {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -69,13 +124,14 @@ footer{
 }
 
 /* animaciones-transformaciones-transition*/
-img {
+
+#img{
     filter: brightness(100%);
     transition: all 2s;
 }
 
-img:hover {
-    transform: scale(1.5);
+#img:hover {
+    transform: scale(1.2);
 }
 
 h1 {
@@ -115,27 +171,28 @@ article {
     flex-direction: none;
 }
 
-#mainHome{
+/*#mainHome{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 15% auto 20% 10%;
     grid-template-areas: "header" "section" "article" "footer";
-}
+}*/
 
 #colorLi a {
     color: beige;
     text-decoration: none;
 }
-.backHome {
+/*.backHome {
     background-image: url("../media/posible\ home.jpg");
     background-size: 100%;
     background-repeat: round;
     background-attachment: fixed;
-}
+}*/
 
 #footerHome{
-    margin-top: 550px;
-    margin-left: 900px;
+    display: flex;
+    justify-content: end;
+    margin-top: 200px;
 }
 
 /*Prendas*/
@@ -151,12 +208,12 @@ article {
     margin-top: 70px;
 }*/
 
-#mainPrendas{
+/*#mainPrendas{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 15% auto 20% 10%;
     grid-template-areas: "header" "section" "article" "footer" ;
-}
+}*/
 
 #gridPrendas {
     display: grid;
@@ -167,11 +224,11 @@ article {
    
 }
 
-div section img {
+/*div section img {
     border-radius: 10px;
     width: 200px;
     height: 200px;
-}
+}*/
 
 
 /*.listaPrendas {
@@ -226,6 +283,17 @@ div section img {
 }
 
 /*Gift card*/
+
+#posicion{
+    display: flex;
+    justify-content: center;
+}
+    
+#footerGift{
+    display: flex;
+    justify-content: end;
+
+}
 .textoGift {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -248,12 +316,12 @@ div section img {
 background-color: whitesmoke;
 }
 
-#mainGiftCard{
+/*#mainGiftCard{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 15% 30% auto 15%;
     grid-template-areas: "header" "section" "article" "footer" ;
-}
+}*/
 
 
 /*Registrate*/
@@ -304,7 +372,7 @@ background-color: whitesmoke;
     }
    
     
-    #mainHome{
+    /*#mainHome{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 15% auto 20% 10%;
@@ -315,14 +383,14 @@ background-color: whitesmoke;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top;
-    }
+    }*/
   
-    #mainPrendas{
+    /*#mainPrendas{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 15% auto 20% 10%;
         grid-template-areas: "header" "section" "article" "footer" ;
-    }
+    }*/
     
     #gridPrendas {
         display: grid;
@@ -334,12 +402,12 @@ background-color: whitesmoke;
     }
 
 
-    #mainAccesorios{
+    /*#mainAccesorios{
         display: grid   
         grid-template-columns: auto;
         grid-template-rows: 20% auto 15%;
         grid-template-areas: "header" "section" "footer" ;
-    }
+    }*/
     
     #gridAccesorios{
         display: grid;
@@ -352,7 +420,7 @@ background-color: whitesmoke;
     #mainCalzados{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 15% auto auto 15%;
+        grid-template-rows: 10% 50% auto 25%;
         grid-template-areas: "header" "section" "article" "footer";
     }
     
@@ -367,7 +435,7 @@ background-color: whitesmoke;
     #mainGiftCard{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 15% 30% auto 15%;
+        grid-template-rows: 15% 30% auto 25%;
         grid-template-areas: "header" "section" "article" "footer" ;
     }
     
@@ -375,15 +443,15 @@ background-color: whitesmoke;
     #mainRegistrate{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 25% auto auto 15% ;
+        grid-template-rows: 15% auto auto 15% ;
         grid-template-areas: "header" "section" "article" "footer" ;
     }
 
     #mainContacto{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15% 15% auto 15%;
-    grid-template-areas: "header" "section" "article" "footer" ;
+    grid-template-rows: 15% auto auto 15%;
+    grid-template-areas: "header" "section" "div" "footer" ;
     }
 }
    
@@ -444,12 +512,12 @@ background-color: whitesmoke;
         
     }
 
-    #mainGiftCard{
+    /*#mainGiftCard{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 15% 30% auto 15%;
         grid-template-areas: "header" "section" "article" "footer" ;
-    }    
+    }*/    
 
     #mainRegistrate{
         display: grid;

@@ -1,0 +1,28 @@
+/* animaciones-transformaciones-transition*/
+
+#img{
+    filter: brightness(100%);
+    transition: all 2s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+/*#img:hover {
+    transform: scale(1.2);
+}*/
+
+h1 {
+    animation-duration: 4s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+    @keyframes titulo {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+

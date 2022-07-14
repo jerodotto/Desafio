@@ -1,0 +1,383 @@
+@import "media";
+@import "variables";
+@import "animaciones";
+
+
+.contenedorNav{
+    a{
+        color: aliceblue;
+    }
+    background-color: rgb(166, 160, 160);
+    .nav-link {
+        color: $navColor;
+    }
+    .nav li.nav-item a:hover{
+        color: $colorHover;
+        &:hover {
+            background-color: $navColor;
+            color: $colorHover;
+            --bs-text-opacity: 0;
+        }
+    }
+    
+    .nav-item {
+        text-decoration: none;
+    }
+    
+    .dropdown-item {
+        color: $colorHover;
+        &:hover {
+            background-color: rgba(220, 220, 220, 0.753) ;
+            color: $colorHover;
+        }
+    }
+   
+    
+         
+}
+
+/*.nav-link {
+    color: white;
+}
+.nav li.nav-item a:hover{
+    color: black;
+}
+.nav li:hover {
+    background-color: white;
+    color: black;
+    --bs-text-opacity: 0;
+}
+.nav-item {
+    text-decoration: none;
+}
+
+.dropdown-item {
+    color:black;
+}
+.dropdown-item:hover {
+    background-color: rgba(220, 220, 220, 0.753) ;
+    color: black;
+}*/
+
+.card-body{
+    background-color: gray;
+    a{
+        background-color: beige;
+        color: $colorHover;  
+        border-color: $colorHover;
+    }
+}
+.carousel-inner {
+    .carousel-item img{
+        object-fit: fil;
+        max-height: 460px;
+        width: 100%;
+    }
+}
+
+/*.card-body a{
+    background-color: beige;
+    color: black;
+}*/
+
+/*.contenedorNav a{
+    color: aliceblue;
+}*/
+
+.card{
+    .card-img-top {
+        width: auto;
+        height: 50vh;
+    }
+    .card-img{
+        height: 50vh;
+        object-fit: scale-down;
+    }
+
+} 
+
+/* */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+}
+
+.padre-flex{
+    justify-content: flex-end;
+}
+
+.bolso {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+a {
+    font-family: $texto;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;     
+}
+
+/*nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;       
+}
+
+ul ul li {
+    display: block;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    color: bisque;
+}*/
+
+footer{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/* Grillas*/
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+section{
+    grid-area: section;
+}
+
+article {
+    grid-area: article;
+}
+
+/*Home*/
+#colorLi{
+    flex-direction: none;
+}
+
+/*#mainHome{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto 20% 10%;
+    grid-template-areas: "header" "section" "article" "footer";
+}*/
+
+#colorLi a {
+    color: beige;
+    text-decoration: none;
+}
+/*.backHome {
+    background-image: url("../media/posible\ home.jpg");
+    background-size: 100%;
+    background-repeat: round;
+    background-attachment: fixed;
+}*/
+
+#footerHome{
+    display: flex;
+    justify-content: end;
+    margin-top: 200px;
+}
+
+/*Prendas*/
+
+ .textoPrendas{
+    font-family: $texto;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(134, 84, 98);
+}
+
+/*.imgPrendas {
+    margin-top: 70px;
+}*/
+
+/*#mainPrendas{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto 20% 10%;
+    grid-template-areas: "header" "section" "article" "footer" ;
+}*/
+
+#gridPrendas {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows:repeat(2, 1fr) ;
+    column-gap: 5px;
+    row-gap: 5px;
+   
+}
+
+/*div section img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}*/
+
+
+/*.listaPrendas {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: italic;
+    color: aliceblue;
+}*/
+
+/*Accesorios*/
+#mainAccesorios{
+    display: grid;   
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto 15%;
+    grid-template-areas: "header" "section" "footer" ;
+}
+
+#gridAccesorios{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 1fr) ;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/*Calzados*/
+.imgCalzados {
+    margin-top: 200px;
+
+}
+
+/*#tablaCalzados {
+    background-color: rgb(40, 40, 110);
+    margin-top: 50px;
+    margin-left: 200px;
+    border: groove;
+}*/
+
+#mainCalzados{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto auto 15%;
+    grid-template-areas: "header" "section" "article" "footer";
+}
+
+#gridCalzados{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    
+}
+
+/*Gift card*/
+
+#posicion{
+    display: flex;
+    justify-content: center;
+}
+    
+#footerGift{
+    display: flex;
+    justify-content: end;
+
+}
+.textoGift {
+    font-family: $texto;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    border: double 5px;
+    margin-top: 80px;
+}
+
+.gift {
+    font-family: $texto;
+    font-size: 20px;
+    font-style: italic;
+    color: grey
+}
+
+.fieldsetGift {
+background-color: whitesmoke;
+}
+
+/*#mainGiftCard{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 30% auto 15%;
+    grid-template-areas: "header" "section" "article" "footer" ;
+}*/
+
+
+/*Registrate*/
+.articleRegistrate {
+    margin-top: 100px;
+    font-family: $texto;
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+    background-color: whitesmoke;
+    #botonRegistrate {
+        margin-left: 300px;
+    }
+}
+
+
+
+#mainRegistrate{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% auto auto 15% ;
+    grid-template-areas: "header" "section" "article" "footer" ;
+}
+
+
+/*Contacto*/
+.TextoContacto {
+    font-family: $texto;
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+    border: double 5px;
+    margin-top: 80px;
+}
+
+#mainContacto{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 15% auto 15%;
+    grid-template-areas: "header" "section" "article" "footer" ;
+}
+
+
+
+
+

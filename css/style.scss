@@ -1,6 +1,7 @@
 @import "media";
 @import "variables";
 @import "animaciones";
+@import "maps";
 
 
 .contenedorNav{
@@ -206,7 +207,7 @@ article {
 
 #footerHome{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin-top: 200px;
 }
 
@@ -298,6 +299,9 @@ article {
 }
 
 /*Gift card*/
+.btnG{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 #posicion{
     display: flex;
@@ -345,8 +349,10 @@ background-color: whitesmoke;
     font-style: italic;
     color: grey;
     background-color: whitesmoke;
-    #botonRegistrate {
+    .botonRegistrate {
+        font-size: 16px;
         margin-left: 300px;
+        border-radius: 1px;
     }
 }
 
@@ -377,7 +383,29 @@ background-color: whitesmoke;
     grid-template-areas: "header" "section" "article" "footer" ;
 }
 
+@each $red, $color in $redes {
+    .#{$red}{
+        background-color: $color;
+    }    
+}
 
+h3{
+    color: map-get($map: $encabezado, $key:color );
+    font-size: map-get($map: $encabezado, $key:tamaño );
+    text-align: map-get($map: $encabezado, $key:centro );
+    font-family: map-get($map: $encabezado, $key:estilo );
+}
 
+@mixin negrita {
+    font-weight: bold;
+    
+}
 
+.btn-primary {
+    @include negrita;
+}
 
+.footer{
+    @extend #footerHome;
+
+}

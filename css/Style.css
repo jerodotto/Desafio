@@ -156,7 +156,7 @@
 /*#img:hover {
     transform: scale(1.2);
 }*/
-h1 {
+h2 {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-name: titulo;
@@ -367,9 +367,9 @@ article {
     background-repeat: round;
     background-attachment: fixed;
 }*/
-#footerHome {
+#footerHome, .footer {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-top: 200px;
 }
 
@@ -454,6 +454,10 @@ article {
 }
 
 /*Gift card*/
+.btnG {
+  font-family: "Times New Roman", Times, serif;
+}
+
 #posicion {
   display: flex;
   justify-content: center;
@@ -499,8 +503,10 @@ article {
   color: grey;
   background-color: whitesmoke;
 }
-.articleRegistrate #botonRegistrate {
+.articleRegistrate .botonRegistrate {
+  font-size: 16px;
   margin-left: 300px;
+  border-radius: 1px;
 }
 
 #mainRegistrate {
@@ -525,4 +531,27 @@ article {
   grid-template-columns: auto;
   grid-template-rows: 15% 15% auto 15%;
   grid-template-areas: "header" "section" "article" "footer";
+}
+
+.Facebook {
+  background-color: blue;
+}
+
+.instagram {
+  background-color: fuchsia;
+}
+
+.whatsapp {
+  background-color: green;
+}
+
+h3 {
+  color: black;
+  font-size: 12 px;
+  text-align: center;
+  font-family: Georgia "Times New Roman" Times serif;
+}
+
+.btn-primary {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

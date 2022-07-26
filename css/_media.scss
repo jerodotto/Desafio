@@ -5,28 +5,7 @@
     #menuMobile{
         display: block;
     }
-   
-    
-    /*#mainHome{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 15% auto 20% 10%;
-        grid-template-areas: "header" "section" "article" "footer";
-    }   
-        
-    #backHome{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: top;
-    }*/
-  
-    /*#mainPrendas{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 15% auto 20% 10%;
-        grid-template-areas: "header" "section" "article" "footer" ;
-    }*/
-    
+      
     #gridPrendas {
         display: grid;
         grid-template-columns:repeat(2, 1fr) ;
@@ -36,14 +15,6 @@
        
     }
 
-
-    /*#mainAccesorios{
-        display: grid   
-        grid-template-columns: auto;
-        grid-template-rows: 20% auto 15%;
-        grid-template-areas: "header" "section" "footer" ;
-    }*/
-    
     #gridAccesorios{
         display: grid;
         grid-template-columns:repeat(3, 1fr) ;
@@ -59,13 +30,6 @@
         grid-template-areas: "header" "section" "article" "footer";
     }
     
-    /*#gridCalzados{
-        display: grid;
-        grid-template-columns:repeat(4, 1fr) ;
-        grid-template-rows: auto;
-        column-gap: 5px;
-        
-    }*/
 
     #mainGiftCard{
         display: grid;
@@ -88,6 +52,8 @@
     grid-template-rows: 15% auto auto 15%;
     grid-template-areas: "header" "section" "div" "footer" ;
     }
+
+
 }
    
 
@@ -145,14 +111,7 @@
         grid-template-rows: auto;
         column-gap: 5px;
         
-    }
-
-    /*#mainGiftCard{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 15% 30% auto 15%;
-        grid-template-areas: "header" "section" "article" "footer" ;
-    }*/    
+    }   
 
     #mainRegistrate{
         display: grid;
@@ -169,3 +128,4 @@
     }
     
 }
+

@@ -5,24 +5,7 @@
   #menuMobile {
     display: block;
   }
-  /*#mainHome{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 15% auto 20% 10%;
-      grid-template-areas: "header" "section" "article" "footer";
-  }   
-
-  #backHome{
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: top;
-  }*/
-  /*#mainPrendas{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 15% auto 20% 10%;
-      grid-template-areas: "header" "section" "article" "footer" ;
-  }*/
+  
   #gridPrendas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,12 +14,7 @@
          column-gap: 5px;
     row-gap: 5px;
   }
-  /*#mainAccesorios{
-      display: grid   
-      grid-template-columns: auto;
-      grid-template-rows: 20% auto 15%;
-      grid-template-areas: "header" "section" "footer" ;
-  }*/
+  
   #gridAccesorios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,13 +29,7 @@
     grid-template-rows: 10% 50% auto 25%;
     grid-template-areas: "header" "section" "article" "footer";
   }
-  /*#gridCalzados{
-      display: grid;
-      grid-template-columns:repeat(4, 1fr) ;
-      grid-template-rows: auto;
-      column-gap: 5px;
-
-  }*/
+  
   #mainGiftCard {
     display: grid;
     grid-template-columns: auto;
@@ -125,12 +97,7 @@
     -moz-column-gap: 5px;
          column-gap: 5px;
   }
-  /*#mainGiftCard{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 15% 30% auto 15%;
-      grid-template-areas: "header" "section" "article" "footer" ;
-  }*/
+  
   #mainRegistrate {
     display: grid;
     grid-template-columns: auto;
@@ -153,9 +120,7 @@
   transform: scale(1.2);
 }
 
-/*#img:hover {
-    transform: scale(1.2);
-}*/
+
 h2 {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
@@ -209,28 +174,7 @@ h2 {
   color: black;
 }
 
-/*.nav-link {
-    color: white;
-}
-.nav li.nav-item a:hover{
-    color: black;
-}
-.nav li:hover {
-    background-color: white;
-    color: black;
-    --bs-text-opacity: 0;
-}
-.nav-item {
-    text-decoration: none;
-}
 
-.dropdown-item {
-    color:black;
-}
-.dropdown-item:hover {
-    background-color: rgba(220, 220, 220, 0.753) ;
-    color: black;
-}*/
 .card-body {
   background-color: gray;
 }
@@ -247,13 +191,7 @@ h2 {
   width: 100%;
 }
 
-/*.card-body a{
-    background-color: beige;
-    color: black;
-}*/
-/*.contenedorNav a{
-    color: aliceblue;
-}*/
+
 .card .card-img-top {
   width: auto;
   height: 50vh;
@@ -292,42 +230,6 @@ a {
   text-decoration: none;
 }
 
-/*nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-ul {
-    list-style: none;
-    font-size: 0;
-}
-
-li {
-    display: flex;
-    display: inline-block;
-    position: relative;
-    font-size: 14px;
-}
-
-ul ul {
-    position: absolute;
-    display: none;       
-}
-
-ul ul li {
-    display: block;
-}
-
-.menu ul li:hover ul{
-    display: block;
-    color: bisque;
-}*/
-footer {
-  display: flex;
-  justify-content: end;
-}
-
 /* Grillas*/
 header {
   grid-area: header;
@@ -350,23 +252,11 @@ article {
   flex-direction: none;
 }
 
-/*#mainHome{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 15% auto 20% 10%;
-    grid-template-areas: "header" "section" "article" "footer";
-}*/
 #colorLi a {
   color: beige;
   text-decoration: none;
 }
 
-/*.backHome {
-    background-image: url("../media/posible\ home.jpg");
-    background-size: 100%;
-    background-repeat: round;
-    background-attachment: fixed;
-}*/
 #footerHome, .footer {
   display: flex;
   justify-content: center;
@@ -381,15 +271,6 @@ article {
   color: rgb(134, 84, 98);
 }
 
-/*.imgPrendas {
-    margin-top: 70px;
-}*/
-/*#mainPrendas{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 15% auto 20% 10%;
-    grid-template-areas: "header" "section" "article" "footer" ;
-}*/
 #gridPrendas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -399,17 +280,6 @@ article {
   row-gap: 5px;
 }
 
-/*div section img {
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}*/
-/*.listaPrendas {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-style: italic;
-    color: aliceblue;
-}*/
 /*Accesorios*/
 #mainAccesorios {
   display: grid;
@@ -432,12 +302,6 @@ article {
   margin-top: 200px;
 }
 
-/*#tablaCalzados {
-    background-color: rgb(40, 40, 110);
-    margin-top: 50px;
-    margin-left: 200px;
-    border: groove;
-}*/
 #mainCalzados {
   display: grid;
   grid-template-columns: auto;
@@ -488,12 +352,6 @@ article {
   background-color: whitesmoke;
 }
 
-/*#mainGiftCard{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 15% 30% auto 15%;
-    grid-template-areas: "header" "section" "article" "footer" ;
-}*/
 /*Registrate*/
 .articleRegistrate {
   margin-top: 100px;

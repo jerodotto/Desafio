@@ -73,10 +73,6 @@
     padding: 0;
 }
 
-.logo{
-    display: flex;
-}
-
 .padre-flex{
     justify-content: flex-end;
 }
@@ -102,7 +98,9 @@ footer{
     justify-content: end;
 }
 
-
+h5{
+    font-family: $texto;
+}
 
 /* Grillas*/
 header{

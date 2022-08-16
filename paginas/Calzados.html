@@ -14,9 +14,12 @@
 <body>
     <div>
     <header class="menu">
-      <div id="menuDesktop">
-        <div id="menuDesktop" class="row">
-          <a class="logo" href="../index.html"><img src="../media/logo original.jpg" width="100px" alt=""></a>
+      <div id="menuDesktop" class="row">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-6 offset-md-3"><a href="../index.html"><img src="../media/logo original.jpg" width="150px" alt=""></a></div>
+          </div>
+        </div>
       <div class="contenedorNav">
                           
           <ul class=" nav justify-content-center">
@@ -44,12 +47,9 @@
           <div class="bolso"><a href="" ><img id="bolso"  src="../media/bolsa.jpg" height="30px" alt=""></a> </div>
       </div> 
       </div>  
-      <br>
-
-      <h3>Tu Calzado para cada ocasión</h3>
-       
+      <br>       
       <div id="menuMobile">
-        <nav class="navbar bg-light fixed-top">
+        <nav class="navbar bg-light fixed-left">
          <div class="container-fluid">
            <a class="navbar-brand" href="../index.html">Habia una Vez</a>
            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -90,7 +90,11 @@
      </div>
     </header>
   
-
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title text-center">Tu Calzado para cada ocasión</h5>
+      </div>
+    </div>
 
     <section class="container-fluid">
         <div class="row">
@@ -98,7 +102,7 @@
             <div class="card" style="width: 18rem;">
               <img id="img" src="../media/CALZADOS.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn">Comprar</a>
               </div>
             </div>
          </div>
@@ -107,7 +111,7 @@
           <div class="card" style="width: 18rem;">
             <img id="img" src="../media/z1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
        </div>
@@ -116,7 +120,7 @@
         <div class="card" style="width: 18rem;">
           <img id="img" src="../media/z2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <a href="#" class="btn">Comprar</a>
           </div>
         </div>
      </div>
@@ -125,7 +129,7 @@
       <div class="card" style="width: 18rem;">
         <img id="img" src="../media/z3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <a href="#" class="btn btn-primary">Comprar</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -136,9 +140,14 @@
 <br>
     
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Tabla de Talles
-</button>
+<div class="row">
+  <div class="col-md-12 offset-md-12">
+    <button type="button" class="btn btn-secondary w-100 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Tabla de Talles
+    </button>
+  </div>
+  </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -170,6 +179,26 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+<br>
+
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title text-center">Productos que pueden interesarte</h5>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="../media/extra.jpg" class="img" alt="...">
+  </div>
+  <div class="card">
+    <img src="../media/extra1jpg.jpg" class="img" alt="...">
+  
+  </div>
+  <div class="card">
+    <img src="../media/extra2.jpg" class="card" alt="...">
   </div>
 </div>
         
